@@ -7,7 +7,7 @@ public class PlayerBoard
 
     public int Size { get; private set; }
 
-    public bool LostGame {get; private set;}
+    public bool LoseState {get; private set;}
 
     public PlayerBoard(int size = 10)
     {
@@ -62,6 +62,7 @@ public class PlayerBoard
             }
         }
         Ships.Add(Ships.Count, true);
+        LoseState = false; 
         return isValid;
     }
 
@@ -89,9 +90,9 @@ public class PlayerBoard
         }
 
         //Assume true, since LostGame is false if at least 1 ship is alive
-        LostGame = true;
+        LoseState = true;
         foreach (KeyValuePair<int, bool> ship in Ships) {
-            if (ship.Value) LostGame = false;
+            if (ship.Value) LoseState = false;
         }
 
         return hit;

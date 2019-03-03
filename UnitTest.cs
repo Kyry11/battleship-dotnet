@@ -8,10 +8,10 @@ public class UnitTest {
 
     [Fact]
     public void TestBoardSize() {
-        Assert.Equal((new PlayerBoard(-565)).Size, 2);
-        Assert.Equal((new PlayerBoard(1)).Size, 2);
-        Assert.Equal((new PlayerBoard(12)).Size, 12);
-        Assert.Equal((new PlayerBoard(1000)).Size, 99);
+        Assert.Equal(2, (new PlayerBoard(-565)).Size);
+        Assert.Equal(2, (new PlayerBoard(1)).Size);
+        Assert.Equal(12, (new PlayerBoard(12)).Size);
+        Assert.Equal(99, (new PlayerBoard(1000)).Size);
     }
 
     [Fact]

@@ -9,10 +9,12 @@ namespace battleship_dotnet
         {
             board = new PlayerBoard(10);
             Console.WriteLine("Create board of size {0}", board.Size);
+
+            /* //Test ships
             Console.WriteLine(board.AddShipHorizontal(0, 0, 10));
             Console.WriteLine(board.AddShipHorizontal(0, 1, 10));
             Console.WriteLine(board.AddShipHorizontal(0, 2, 10));
-
+            */
             Start();
         }
 
@@ -82,7 +84,7 @@ namespace battleship_dotnet
                         break;
                     case "winstate":
                         {
-                            if (board.LostGame) Console.WriteLine("Game lost :(");
+                            if (board.LoseState) Console.WriteLine("Game lost :(");
                             else Console.WriteLine("Still in the game!");
                         }
                         break;
