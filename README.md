@@ -1,22 +1,28 @@
-# Battleship
+[Forked from FlareHR battleship-dotnet take-home exercise](https://github.com/flarehr/battleship-dotnet)
 
-This is the Battleship game seed .NET Core project. You should use it as a starting point for implementing Flare's take-home exercise
+# Battleship State Tracker
 
-This project is cross-platform and supports Mac OS / Windows / Linux.
-
-## Prerequisites
+## System Requirements
 
 1. Install [.NET Core SDK](https://dotnet.microsoft.com/download)
 2. Install [Visual Studio Code](https://code.visualstudio.com/)
 3. Open this project in VS Code and accept the prompt to install recommended extensions
 
-## Creating .NET project
+## Installation and Startup
 
-You can use various dotnet CLI commands to set up and run a new project, e.g.
 ```
-dotnet new console
+git clone https://github.com/VivekRajagopal/battleship-dotnet`
 dotnet run
 ```
-Follow the information in the [official guide](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code)
 
-For more details about CLI, refer to the [official documentation for CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x).
+## Usage
+
+The program uses the CLI for user input. Add ships, attack and check the game win state by using commands and parameters as shown below.
+
+### Commands:
+| Command | Params | Description | Message |
+| ------- | ------ | ----------- | ------- |
+| `render-board` | `none` | Simple rendering of the current state of the board cells | `none` |
+| `addship` | `right|down left top length` | Add ship going `right` or `down` starting at `left` & `top` for `length` | `True` or `False` for ship addition |
+| `attack` | `left top` | Attacks at `left` & `top` for `length` | `hit` or `miss` |
+| `exit | quit` | `none` | Exits program | `none` |
