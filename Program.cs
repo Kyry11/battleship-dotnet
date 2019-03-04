@@ -8,13 +8,14 @@ namespace battleship_dotnet
         static void Main(string[] args)
         {
             board = new PlayerBoard(10);
-            Console.WriteLine("Create board of size {0}", board.Size);
+            Console.WriteLine("Created board of size {0}", board.Size);
 
             /* //Test ships
             Console.WriteLine(board.AddShipHorizontal(0, 0, 10));
             Console.WriteLine(board.AddShipHorizontal(0, 1, 10));
             Console.WriteLine(board.AddShipHorizontal(0, 2, 10));
             */
+
             Start();
         }
 
@@ -29,7 +30,7 @@ namespace battleship_dotnet
                 string[] cmds = input.Split(' ');
                 switch (cmds[0])
                 {
-                    case "render-board":
+                    case "render":
                         Console.Write(board.Render());
                         break;
                     case "hello":

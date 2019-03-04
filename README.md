@@ -12,8 +12,11 @@
 
 ```
 git clone https://github.com/VivekRajagopal/battleship-dotnet
+cd battleship-dotnet
 dotnet run
 ```
+
+**Test:** `dotnet test`
 
 ## Usage
 
@@ -22,7 +25,7 @@ The program uses the CLI for user input. Add ships, attack and check the game wi
 ### Commands:
 | Command | Params | Description | Message |
 | ------- | ------ | ----------- | ------- |
-| `render-board` | | Simple rendering of the current state of the board cells |  |
+| `render` | | Simple rendering of the current state of the board cells |  |
 | `addship right` | `left top length` | Add ship going `right` starting at `left` & `top` for `length` | `True` or `False` for ship addition |
 | `addship down` | `left top length` | Add ship going `down` starting at `left` & `top` for `length` | `True` or `False` for ship addition |
 | `attack` | `left top` | Attacks at `left` & `top` for `length` | `hit` or `miss` |
