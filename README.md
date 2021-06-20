@@ -1,6 +1,16 @@
-[Forked from FlareHR battleship-dotnet take-home exercise](https://github.com/flarehr/battleship-dotnet)
-
 # Battleship State Tracker
+
+## App has to allow to:
+
+- Create a board
+- Add a battleship to the board
+- Take an “attack” at a given position, and report back whether the attack resulted in a hit or a miss
+- Return whether the player has lost the game yet (i.e. all battleships are sunk)
+
+## Game rules:
+
+A battleship is sunk if it has been hit on all the squares it occupies
+A player wins if all of their opponent’s battleships have been sunk
 
 ## System Requirements
 
