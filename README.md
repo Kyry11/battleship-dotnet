@@ -9,7 +9,7 @@
 
 ## Game rules:
 
-A battleship is sunk if it has been hit on all the squares it occupies
+A battleship is sunk if it has been hit on all the squares it occupies\
 A player wins if all of their opponent’s battleships have been sunk
 
 ## System Requirements
